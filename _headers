@@ -1,0 +1,7 @@
+/
+  Strict-Transport-Security: max-age=31536000; includeSubdomains
+  Cache-Control: public, max-age=14400
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
