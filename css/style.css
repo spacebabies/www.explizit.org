@@ -1,0 +1,16 @@
+/* from light to dark:
+ * #C9CAD9 #D1D2F9 #A3BCF9 #7796CB #576490
+*/
+* { box-sizing: border-box;}
+pre { margin: 0; }
+.info { display: flex; overflow: hidden; align-items: flex-start; flex-flow: row; height: 0; max-height: 0; transition: max-height 300ms ease-in-out; color: #C9CAD9; background: #576490; }
+.info-open { height: auto; max-height: 1000px; padding: 1em;  }
+.info a { cursor: pointer; border-bottom: 1px solid #C9CaD9; }
+.info pre.diz { margin-right: 2em; }
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .info {
+    display: flex; flex-flow: column;
+  }
+}
