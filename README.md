@@ -9,11 +9,16 @@ Covert the beautiful ANSI art:
 iconv -f CP438 -t utf8 < FILE_ID.DIZ
 ```
 
-Produce an acceptible output with **find**:
+Produce the second panel's output with GNU `find`:
 
 ```
-find /some/folder/* -printf '%f/%s/(%s bytes)/%TY-%Tm-%Td %TH:%TM:%.2TS %TZ\n' | numfmt -d/ --field=2 --to=iec | column -t -s/
+LC_ALL='en' \
+  find $XPLPATH -type f \
+    -printf '%f/%s/%s/%Te %TB %TY %TH:%TM:%.2TS %TZ/%TFT%TF%Tz\n' \
+  | LC_ALL='en' numfmt -d/ --field=2 --to=iec \
+  | column -t -s/
 ```
+
 
 Print file checksums:
 
