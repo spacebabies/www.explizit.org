@@ -1,0 +1,6 @@
+---
+- name: bla
+  artist: Komah
+  album: Blah
+  url: nog meer bla
+  cover_art_url: yolo

@@ -1,3 +1,13 @@
+window.scramble = require(
+  './scramble-ES5.min.js'
+);
+
+window.amplitude = require(
+  './amplitude.min.js'
+);
+
+import css from './css/style.css';
+
 function toggleInfo(event) {
   event.preventDefault();
   if (!event.target.classList.contains('toggle')) return;

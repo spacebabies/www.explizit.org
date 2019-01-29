@@ -1,0 +1,19 @@
+{
+  "name": "www.explizit.org",
+  "version": "1.0.0",
+  "description": "All songs of the tracker music group Explizit",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacebabies/www.explizit.org.git"
+  },
+  "author": "Joost Baaij",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/spacebabies/www.explizit.org/issues"
+  },
+  "homepage": "https://github.com/spacebabies/www.explizit.org#readme"
+}
