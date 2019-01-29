@@ -7,6 +7,9 @@ pre { margin: 0; }
 .info-open { height: auto; max-height: 1000px; padding: 1em;  }
 .info a { cursor: pointer; border-bottom: 1px solid #C9CaD9; }
 .info pre.diz { margin-right: 2em; }
+.leech { max-width: 400px; margin: auto; font-family: monospace; font-weight: bold;}
+.leech img { width: 400px; height: 169px; display: block; margin: auto;}
+.leech img:hover { border: 4px solid yellow; transform: rotateY(180deg);}
 
 /* Small screens */
 @media all and (max-width: 500px) {
