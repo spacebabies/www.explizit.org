@@ -3,6 +3,9 @@
 */
 * { box-sizing: border-box;}
 pre { margin: 0; }
+a { color: #576490; }
+pre.pre-open { background: #7796CB; }
+pre.pre-open a { color: #c9cad9; }
 .info { display: flex; overflow: hidden; align-items: flex-start; flex-flow: row; height: 0; max-height: 0; transition: max-height 300ms ease-in-out; color: #C9CAD9; background: #576490; }
 .info-open { height: auto; max-height: 1000px; padding: 1em;  }
 .info a { cursor: pointer; border-bottom: 1px solid #C9CaD9; }

@@ -2,10 +2,30 @@ function toggleInfo(event) {
   event.preventDefault();
   if (!event.target.classList.contains('toggle')) return;
 
-  var box = event.target.parentNode.nextElementSibling;
-  if (!box || !box.classList.contains('info')) return;
+  var infos = document.querySelectorAll('.info-open')
+  if (infos) {
+    for(var i=0; i<infos.length; i++) {
+      infos[i].classList.remove('info-open')
+    }
+  }
 
-  box.classList.toggle('info-open')
+  var pres = document.querySelectorAll('body > pre')
+  if(pres) {
+    for(var i=0; i<pres.length; i++) {
+      pres[i].classList.remove('pre-open')
+    }
+  }
+
+  var pre = event.target.parentNode;
+  if (pre && pre.tagName === 'PRE') {
+    pre.classList.add('pre-open')
+  }
+
+  var box = event.target.parentNode.nextElementSibling;
+  if (box && box.classList.contains('info')) {
+    box.classList.add('info-open')
+  }
+
 }
 
 function satisfyNerds(event) {
